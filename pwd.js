@@ -1,4 +1,4 @@
-process.stdout.write('prompt > ');
+module.export()
 
 process.stdin.on('data',(data) => {
     let cmd = data.toString().trim();
@@ -8,4 +8,3 @@ process.stdin.on('data',(data) => {
     }
     process.stdout.write('\nprompt > ');
 });
-
