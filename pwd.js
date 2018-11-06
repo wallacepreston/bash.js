@@ -1,12 +1,7 @@
 
-let printWorking = process.stdin.on('data',(data) => {
-    let cmd = data.toString().trim();
-    process.stdout.write(`You typed: ${cmd}\n`);
-    if(cmd === 'pwd'){
-        process.stdout.write(__dirname)
-    }
-    process.stdout.write('\nprompt > ');
-});
+let printWorking = function(){
+    process.stdout.write(__dirname);
+};
 
 module.exports = printWorking;
 
